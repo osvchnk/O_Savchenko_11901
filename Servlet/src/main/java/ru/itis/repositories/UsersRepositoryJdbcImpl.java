@@ -52,6 +52,12 @@ public class UsersRepositoryJdbcImpl implements UsersRepository{
     }
 
     @Override
+    public List<User> findAllByFirstNamePrefix(String prefix) {
+        String sql = "select * from app_user where first_name like '"+ prefix +"%'";
+        return jdbcTemplate.queryForList(sql, userRowMapper);
+    }
+
+    @Override
     public Optional<User> findByLoginPassword(String login, String password) {
         if(jdbcTemplate.queryForList(SQL_FIND_ALL_USERS_BY_LOGIN_AND_PASSWORD, userRowMapper, login, password).isEmpty()){
             return Optional.empty();
