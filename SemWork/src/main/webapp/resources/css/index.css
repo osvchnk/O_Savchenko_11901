@@ -1,0 +1,42 @@
+body {
+    position: relative;
+}
+
+.container-posts {
+    padding-top: 2%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.card {
+    position: relative;
+    padding: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    position: relative;
+    text-align: center;
+}
+
+.like {
+    position: relative;
+    width: 10%;
+    margin: auto;
+}
+
+.like i {
+    font-size: 1.5rem;
+    transition: .3s;
+}
+
+.like:hover i {
+    color: #ff1744;
+}
+.fas{
+    color: #ff1744;
+    transition: .3s;
+}
+

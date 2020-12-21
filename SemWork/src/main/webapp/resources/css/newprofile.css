@@ -1,0 +1,65 @@
+
+.container-posts {
+    padding-top: 2%;
+    width: 70%;
+    padding-left: 20%;
+    margin: auto;
+    position: relative;
+}
+
+.card {
+    position: relative;
+    padding: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    position: relative;
+    text-align: center;
+}
+
+.profile {
+    margin-left: 3%;
+    margin-top: 8%;
+    position: fixed;
+}
+
+.profile .card-img-top {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: 7%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 0;
+}
+
+.card-body .btn-ava {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.like {
+    position: relative;
+    width: 10%;
+    margin: auto;
+}
+
+.like i {
+    font-size: 1.5rem;
+    transition: .3s;
+}
+
+.like:hover i {
+    color: #ff1744;
+}
+.fas{
+    color: #ff1744;
+    transition: .3s;
+}
